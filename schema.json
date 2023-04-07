@@ -1,0 +1,196 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "documentType": {
+                "type": "string"
+            },
+            "controlNumber": {
+                "type": "number"
+            },
+            "datetimes": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "datetimeType": {
+                            "type": "string"
+                        },
+                        "datetime": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "contracts": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "transactionType": {
+                            "type": "string"
+                        },
+                        "contractId": {
+                            "type": "string"
+                        },
+                        "oldContractId": {
+                            "type": "string"
+                        },
+                        "references": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "referenceType": {
+                                        "type": "string"
+                                    },
+                                    "reference": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "dealers": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "group_type": {
+                                        "type": "string"
+                                    },
+                                    "group_name": {
+                                        "type": "string"
+                                    },
+                                    "id_type": {
+                                        "type": "string"
+                                    },
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "address": {
+                                        "type": "object",
+                                        "properties": {
+                                            "addr1": {
+                                                "type": "string"
+                                            },
+                                            "city": {
+                                                "type": "string"
+                                            },
+                                            "state": {
+                                                "type": "string"
+                                            },
+                                            "zip": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "references": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "referenceType": {
+                                                    "type": "string"
+                                                },
+                                                "reference": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "datetimes": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "datetimeType": {
+                                                    "type": "string"
+                                                },
+                                                "datetime": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "agreements": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "lineNumber": {
+                                        "type": "number"
+                                    },
+                                    "reference": {
+                                        "type": "string"
+                                    },
+                                    "details": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "lineInformation": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "lineNumber": {
+                                                    "type": "number"
+                                                },
+                                                "itemId": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "pricing": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "price": {
+                                                    "type": "number"
+                                                },
+                                                "quantity": {
+                                                    "type": "number"
+                                                },
+                                                "uom": {
+                                                    "type": "string"
+                                                },
+                                                "datetimes": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "datetimeType": {
+                                                                "type": "string"
+                                                            },
+                                                            "datetime": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "default": []
+}
